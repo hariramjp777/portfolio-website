@@ -1,0 +1,16 @@
+img {
+    margin: 0 auto;
+    padding: 2%;
+    width: 100%;
+    /* [1.1] Set it as per your need */
+    overflow: hidden;
+    /* [1.2] Hide the overflowing of child elements */
+    transition: transform .5s ease;
+}
+
+
+/* [3] Finally, transforming the image when container gets hovered */
+
+img:hover {
+    transform: scale(1.1);
+}

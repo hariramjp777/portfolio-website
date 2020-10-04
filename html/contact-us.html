@@ -18,7 +18,392 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lorem Ipsum</title>
+
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" 
+      rel="stylesheet"
+    >
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+    <!-- CSS only -->
+    <link 
+      rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact-us.css">
+
+    <title>Contact Us</title>
   </head>
-  <body></body>
+  <body>
+
+    <div class="contact__us">
+      <h1 class="ml3">CONTACT US</h1>
+      <p class="contact__us-para">Our team are constantly contributing on this open-source project to help bring better UX, 
+        if you have any idea and want to contribute in this project, then you are on right way.</p>
+      <p class="contact__us-para">Write your message down here and tell us what would you like to help us with!</p>
+      
+      <div class="row">
+        <div class="col col-sm-8 col-md">
+          <div class="box">
+            <div id="overlay">
+              <div class="image image1">
+                <div class="trick"></div> <!-- end of .trick -->
+              </div> <!-- end of .image  -->
+
+              <div class="team__members">
+                <ul> <h2 class="text">Walter Wright</h2> </ul>
+                <div> <p class="text1">HTML + CSS</p> </div>
+              </div>
+
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading " role="tab" id="headingOne">
+                    <h4 class="panel-title ">
+                      <a 
+                        role="button" 
+                        data-toggle="collapse" 
+                        data-parent="#accordion" 
+                        href="#collapseOne" 
+                        aria-expanded="" 
+                        aria-controls="collapseOne">
+                        <div class="title  btn btn-danger btn-outline btn-lg">ABOUT WALTER</div>
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div 
+                    id="collapseOne" 
+                    class="panel-collapse collapse in" 
+                    role="tabpanel" 
+                    aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      Walter has been building websites for years. He enjoys making unique websites and web projects. His hobbies include photography, woodworking, leatherworking, fishing, and mid century modern furniture.
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a 
+                        class="collapsed" 
+                        role="button" 
+                        data-toggle="collapse" 
+                        data-parent="#accordion" 
+                        href="#collapseTwo" 
+                        aria-expanded="false" 
+                        aria-controls="collapseTwo">
+                        <div class="title btn btn-danger btn-outline btn-lg">SOCIAL</div>
+                      </a>
+                    </h4>
+                  </div>
+        
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                     <p class="text2">Get in touch with Walter</p>
+                     <ul class="social__icons">
+                       <li class="social__icons-github">
+                          <a href="https://github.com/"> <img src="../assets/github.svg" alt="Github"> </a> 
+                        </li>
+
+                        <li class="social__icons-twitter">
+                          <a href="https://twitter.com"> <img src="../assets/twitter.svg" alt="Twitter"> </a> 
+                        </li>
+
+                        <li class="social__icons-mail">
+                          <a href=""> <img src="../assets/send.svg" alt="Email"> </a> 
+                        </li>
+                     </ul>
+                     
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a 
+                        class="collapsed" 
+                        role="button" 
+                        data-toggle="collapse" 
+                        data-parent="#accordion" 
+                        href="#collapseThree" 
+                        aria-expanded="false" 
+                        aria-controls="collapseThree">
+                        <div class="title btn btn-danger btn-outline btn-lg">CONTACT</div>
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      <form id="form" class="topBefore">
+                        <input id="name" type="text" placeholder="NAME">
+                        <input id="email" type="text" placeholder="E-MAIL">
+                        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                        <input id="submit" type="submit" value="Submit Now!">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end of .col -->
+
+        <div class="col col-sm-8 col-md-6">
+          <div class="box">
+            <div id="overlay">
+              <div class="image image2">
+                <div class="trick"></div> <!-- end of .trick -->
+              </div> <!-- end of .image  -->
+
+              <div class="team__members">
+                <ul> <h2 class="text">James Harry</h2> </ul>
+                <div> <p class="text1">JS + JQuery</p> </div>
+              </div>
+
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading " role="tab" id="headingOne">
+                    <h4 class="panel-title ">
+                      <a 
+                        role="button" 
+                        data-toggle="collapse" 
+                        data-parent="#accordion" 
+                        href="#collapseOne" 
+                        aria-expanded="" 
+                        aria-controls="collapseOne">
+                        <div class="title  btn btn-danger btn-outline btn-lg">ABOUT JAMES</div>
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div 
+                    id="collapseOne" 
+                    class="panel-collapse collapse in" 
+                    role="tabpanel" 
+                    aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      Walter has been building websites for years. He enjoys making unique websites and web projects. His hobbies include photography, woodworking, leatherworking, fishing, and mid century modern furniture.
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a 
+                        class="collapsed" 
+                        role="button" 
+                        data-toggle="collapse" 
+                        data-parent="#accordion" 
+                        href="#collapseTwo" 
+                        aria-expanded="false" 
+                        aria-controls="collapseTwo">
+                        <div class="title btn btn-danger btn-outline btn-lg">SOCIAL</div>
+                      </a>
+                    </h4>
+                  </div>
+        
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                      <p class="text2">Get in touch with James</p>
+                      <ul class="social__icons">
+                        <li class="social__icons-github">
+                          <a href="https://github.com/"> <img src="../assets/github.svg" alt="Github"> </a> 
+                        </li>
+
+                        <li class="social__icons-twitter">
+                          <a href="https://twitter.com"> <img src="../assets/twitter.svg" alt="Twitter"> </a> 
+                        </li>
+
+                        <li class="social__icons-mail">
+                          <a href=""> <img src="../assets/send.svg" alt="Email"> </a> 
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a 
+                        class="collapsed" 
+                        role="button" 
+                        data-toggle="collapse" 
+                        data-parent="#accordion" 
+                        href="#collapseThree" 
+                        aria-expanded="false" 
+                        aria-controls="collapseThree">
+                        <div class="title btn btn-danger btn-outline btn-lg">CONTACT</div>
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      <form id="form" class="topBefore">
+                        <input id="name" type="text" placeholder="NAME">
+                        <input id="email" type="text" placeholder="E-MAIL">
+                        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                        <input id="submit" type="submit" value="Submit Now!">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end of .col -->
+
+        <div class="col col-sm col-md">
+          <div class="box">
+            <div id="overlay">
+              <div class="image image3">
+                <div class="trick"></div> <!-- end of .trick -->
+              </div> <!-- end of .image  -->
+              
+              <div class="team__members">
+                <ul> <h2 class="text">Ali Kazal</h2> </ul>
+                <div> <p class="text1">HTML + CSS + Bootstrap + SASS + JS + NodeJs</p> </div>
+              </div>
+
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading " role="tab" id="headingOne">
+                    <h4 class="panel-title ">
+                      <a 
+                        role="button" 
+                        data-toggle="collapse" 
+                        data-parent="#accordion" 
+                        href="#collapseOne" 
+                        aria-expanded="" 
+                        aria-controls="collapseOne">
+                        <div class="title  btn btn-danger btn-outline btn-lg">ABOUT ALI</div>
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div 
+                    id="collapseOne" 
+                    class="panel-collapse collapse in" 
+                    role="tabpanel" 
+                    aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      Walter has been building websites for years. He enjoys making unique websites and web projects. His hobbies include photography, woodworking, leatherworking, fishing, and mid century modern furniture.
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a 
+                        class="collapsed" 
+                        role="button" 
+                        data-toggle="collapse" 
+                        data-parent="#accordion" 
+                        href="#collapseTwo" 
+                        aria-expanded="false" 
+                        aria-controls="collapseTwo">
+                        <div class="title btn btn-danger btn-outline btn-lg">SOCIAL</div>
+                      </a>
+                    </h4>
+                  </div>
+        
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                      <p class="text2">Get in touch with Ali</p>
+                      <ul class="social__icons">
+                        <li class="social__icons-github">
+                          <a href="https://github.com/"> <img src="../assets/github.svg" alt="Github"> </a> 
+                        </li>
+
+                        <li class="social__icons-twitter">
+                          <a href="https://twitter.com"> <img src="../assets/twitter.svg" alt="Twitter"> </a> 
+                        </li>
+
+                        <li class="social__icons-mail">
+                          <a href=""> <img src="../assets/send.svg" alt="Email"> </a> 
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a 
+                        class="collapsed" 
+                        role="button" 
+                        data-toggle="collapse" 
+                        data-parent="#accordion" 
+                        href="#collapseThree" 
+                        aria-expanded="false" 
+                        aria-controls="collapseThree">
+                        <div class="title btn btn-danger btn-outline btn-lg">CONTACT</div>
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      <form id="form" class="topBefore">
+                        <input id="name" type="text" placeholder="NAME">
+                        <input id="email" type="text" placeholder="E-MAIL">
+                        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                        <input id="submit" type="submit" value="Submit Now!">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- end of .col -->
+        </div> <!-- end of .row -->
+      </div> <!--  end of .contact__us-->
+
+      <div class="contact__us-form">
+          <form>
+            <div class="form-group contact__us-form-group">
+              <input type="text" class="form-control name" id="formGroupExampleInput" placeholder="Name">
+            </div>
+           
+            <div class="form-group contact__us-form-group">
+              <textarea class="form-control textarea" id="exampleFormControlTextarea1" placeholder="Your Message"></textarea>
+            </div>
+
+            <div class="form-group contact__us-form-group">
+              <button type="button" class="btn btn__outline">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+    <!--  Animation for Contact-Us heading  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../js/test.js"></script>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script 
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+      crossorigin="anonymous">
+    </script>
+
+    <script 
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+      crossorigin="anonymous">
+    </script>
+
+    <script 
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+      crossorigin="anonymous">
+    </script>
+  </body>
 </html>

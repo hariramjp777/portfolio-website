@@ -1,0 +1,406 @@
+*{
+    margin:auto;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1E242A;
+    filter: progid: DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#003073', endColorstr='#029797');
+    background-image: url(//img.alicdn.com/tps/TB1d.u8MXXXXXXuXFXXXXXXXXXX-1900-790.jpg);
+    background-size: 100%;
+    /* background-position:  cover; */
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, #003073), color-stop(100%, #0053a0));
+    background-image: -webkit-linear-gradient(135deg, #003073, #0053a0);
+    background-image: -moz-linear-gradient(45deg, #003073, #0053a0);
+    background-image: -ms-linear-gradient(45deg, #003073 0, #0053a0 100%);
+    background-image: -o-linear-gradient(45deg, #003073, #0053a0);
+    background-image: linear-gradient(135deg, #003073, #0053a0);
+    text-align: center;
+    margin-top: 2%;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.contact__us{
+    text-align: center;
+    height: 10%;
+    box-sizing: border-box;
+}
+
+.ml3 {
+    font-weight: 900;
+    font-size: 5.5em;
+    font-family: 'Zilla Slab Highlight', cursive;
+    letter-spacing: 1px;
+    margin-top: 10%;
+    line-height: 1.7;
+    color: #f4f4f4;
+}
+
+.contact__us-para{
+    font-family: 'Fira Code', serif;
+    font-size: 17px;
+    letter-spacing: 2.5px;
+    color: #f4f4f4;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4em;
+}
+
+.box{
+  margin: auto;
+  padding: 0;
+}
+
+.team__members{
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 100%;
+}
+
+.text {
+  font-family: 'Fira Code';
+  font-size: 40px;
+  position: absolute center;
+  text-align: center;
+  padding-left: 0%;
+  color: #f4f4f4;
+  margin-top: 43px;
+  line-height: 1.5;
+}
+
+.text1, .text2 {
+  font-family: 'Fira Code';
+  font-size: 18px;
+  text-align: center;
+  margin-top: -20px;
+  color: #f4f4f4;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.image {
+  text-align: center;
+  width: 200px;
+  /* Container's dimensions */
+  
+  height: 200px;
+  -webkit-border-radius: 75%;
+  -moz-border-radius: 75%;
+  box-shadow: 0 0 0 1px transparent;  
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: -30px;
+  align-content: center;
+}
+
+.image1{
+  background: url("https://images.unsplash.com/reserve/ysPfhVSzSP2m629CW0mw_selfPortrait.jpg?fit=crop&fm=jpg&h=700&q=80&w=1225") center center no-repeat;
+  background-size: cover;
+}
+
+.image2{
+  background: url("https://images.unsplash.com/photo-1601568544619-b03062ca528a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80") center center no-repeat;
+  background-size: cover;
+}
+
+.image3{
+  background: url("https://images.unsplash.com/photo-1598966739654-5e9a252d8c32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") center center no-repeat;
+  background-size: cover;
+}
+
+.trick {
+  display: inline-block;
+  vertical-align: middle;
+  height: 150px;
+}
+
+.image1:hover, .image2:hover, .image3:hover {
+  box-shadow: 2px 4px 20px .9px #f4f4f4;
+}
+
+.image1:hover, .image2:hover , .image3:hover{
+  -webkit-transform: scale(1.12);
+  transform: scale(1.12);
+  -webkit-transition: 1.6s ease-in-out;
+  transition: 1.6s ease-in-out;
+}
+
+.trick:hover img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#overlay {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  padding: 0px;
+  opacity: 1.0;
+  -webkit-transition: opacity 2.25s ease;
+  -moz-transition: opacity 10.25s ease;
+}
+
+#box:hover #overlay {
+  opacity: 1;
+}
+
+.panel{
+  background-color: #eee;
+}
+
+.panel-group{
+  width:300px;
+  margin:auto;
+  /*margin:50px 400px 50px 400px;*/
+  max-width:100%;
+}
+
+.panel-heading{
+  background-color:transparent !important;
+}
+
+.title{
+  text-align: center;
+  background-color:transparent;
+  color:#000;
+  font-family:lato;
+  font-weight:300;
+  font-size:15px;
+  max-width:100%;
+}
+
+.text2{
+ color: #000; 
+ margin-top: 8px;
+}
+
+.social__icons{
+  display: flex;
+  list-style: none;
+}
+
+.social__icons-github, .social__icons-twitter, .social__icons-mail{
+  border: 1px solid #1E242A;
+  border-radius: 50px;
+
+  padding: 12px;
+}
+
+.social__icons-github:hover, .social__icons-twitter:hover, .social__icons-mail:hover{
+  border: 1px solid #0053a0;
+  -webkit-transform: scale(1.12);
+  transform: scale(1.12);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#accordion{
+  background-color: transparent;
+  max-width:100%;
+  margin-bottom:200px;
+}
+
+.btn-outline {
+  color: inherit;
+  transition: all 1.4s;
+  background-color: transparent;
+}
+/* button CSS */
+
+.btn-danger.btn-outline {
+  margin-top: 9px;
+  background-color: transparent;
+  color: #000;
+  border-color: #000;
+  padding:auto;
+  padding:10px 0px;
+  margin: 1px 5px 1px 0px;
+  width: 100%;
+  text-align:center;
+  font-family: raleway;
+  font-weight: 300;
+  max-width:100%;
+}
+
+/*---------    Contact Form    ------------*/
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #000;
+  font-size: 15px;
+}
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder,
+textarea:hover::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 15px;
+  font-family: raleway;
+}
+
+input:hover:focus::-webkit-input-placeholder,
+textarea:hover:focus::-webkit-input-placeholder {
+  color: #fff;
+  font-family: raleway;
+}
+
+input:hover::-moz-placeholder,
+textarea:hover::-moz-placeholder {
+  color: #fff;
+  font-size: 15px;
+  font-family: raleway;
+}
+
+input:hover:focus::-moz-placeholder,
+textarea:hover:focus::-moz-placeholder {
+  color: #fff;
+  font-family: raleway;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: #fff;
+  font-size: 15px;
+  font-family: raleway;
+}
+
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+  color: #fff;
+  font-family: raleway;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: #fff;
+  font-size: 15px;
+  font-family: raleway;
+}
+
+input:hover:focus::-ms-placeholder,
+textarea:hover::focus:-ms-placeholder {
+  color: #fff;
+  font-family: raleway;
+}
+
+#form {
+  position: relative;
+  width: 100%;
+  margin: 0px auto 0px auto;
+  font-family: raleway;
+}
+
+input {
+  font-family: raleway;
+  font-size: 15px;
+  width: 100%;
+  height: 50px;
+  padding: 0px 12px 0px 12px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #eee;
+  border-bottom: none;
+  transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -ms-transition: all 0.9s ease-in-out;
+}
+
+input:hover {
+  background: #ccc;
+  color: #fff;
+  font-family: raleway;
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #000;
+  font-family: raleway;
+  font-size: 25px;
+  border: solid 1px #eee;
+  transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -ms-transition: all 0.9s ease-in-out;
+}
+
+textarea:hover {
+  background: #ccc;
+  color: #fff;
+  font-family: raleway;
+}
+
+#submit {
+  width: 100%;
+  padding: 0;
+  font-family: raleway;
+  font-size: 20px;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #eee;
+  border-top: none;
+  margin-bottom: 0px;
+}
+
+#submit:hover {
+  color: #fff;
+  background-color: #ccc;
+}
+
+.contact__us-form{
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.contact__us-form-group{
+  margin: 20px;   
+}
+
+.name{
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid #ddd;
+}
+
+.name::placeholder, .textarea::placeholder{
+  color: #f4f4f4;
+  font-family: 'Fira Code', serif;
+}
+
+.name:hover, .textarea:hover{
+  background-color: #eee;
+}
+
+.textarea{
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+}
+
+.btn__outline{
+  border: 1px solid #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn{
+  font-family: 'Fira Code', serif;
+  color: #f4f4f4;
+}
+
+.btn:hover{
+  color: #000;
+  background-color: #eee;
+}

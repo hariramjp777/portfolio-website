@@ -281,7 +281,7 @@ main{
 	}
 }
 
-@media (min-width: 642px) and (max-height: 832px){
+@media (min-width: 642px) and (max-height: 655px){
 	main{
 		height: 747px;
 	}

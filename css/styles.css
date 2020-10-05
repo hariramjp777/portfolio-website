@@ -281,6 +281,12 @@ main{
 	}
 }
 
+@media (min-width: 451px) and (max-height: 934px){
+	main{
+		height: 747px;
+	}
+}
+
 /* keyframes */
 
 @keyframes animate {

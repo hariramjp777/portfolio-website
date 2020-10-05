@@ -1,85 +1,30 @@
-body{
-	margin: 0px;
-	background: #1E242A;
-	color: white;
-}
-
-#main{
-	align-items: center;
-	justify-content: center;
-	width: 100vw;
-	height: 100%;
-	position: absolute;
-	overflow: hidden;
-}
-
-#box1{
-	width: 900px;
-	height: 765px;
-	transform: scale(0.6);
-	background-image: url('../assets/lsvg_2 (1).svg');
-	position: absolute;
-	left:15%;
-	bottom:-100%;
-	animation: anim 2s forwards, anim2 3s forwards 3s;
-}
-
-#box2{
-	width: 100%;
-	height: 100%;
+/* font face */
+@font-face {
 	font-family: "Bahnschrift Condensed";
-	padding: 20px;
-	font-size: 10em;
-	font-weight: 500;
-	line-height: 130px;
+	src: url("../fonts/BAHNSCHRIFT.TTF");
+}
+
+/* css reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+body{
+	background: #1E242A;
+	color: #ffffff;
+}
+
+/* header - theme switcher */
+
+header{
+	padding: 4rem;
 	position: relative;
-	top:150px;
-	left: 100px;
-	overflow: hidden;
-}
-
-#text{
-	float: left;
-	position: relative;
-	left:-100%;
-	animation: anim3 2s forwards 3s;
-	white-space: nowrap;
-	width: 22ch;
-}
-
-@keyframes anim3 {
-	from{
-		left:-100%;
-	}
-
-	to{
-		left: 0%;
-	}
-}
-
-@keyframes anim{
-	from{
-		bottom: -100%;
-	}
-	to{
-		bottom:-20%;
-	}
-} 
-
-@keyframes anim2{
-	from{
-		left:15%;
-/*		width: 900px;
-*/	}
-	to{
-/*		width: 0px;
-*/		left: 45%;
-	}
-}
-
-.light-mode {
-	background-color: white;
-	color:black;
 }
 
 .switch {
@@ -87,8 +32,9 @@ body{
 	display: inline-block;
 	width: 60px;
 	height: 34px;
-	right: 2%;
-	top: 2%;
+	right: 5%;
+	top: 50%;
+	transform: translate(0,-50%);
 	z-index: 999;
 }
 
@@ -144,37 +90,88 @@ input:checked + .slider:before {
 	transition: .4s;
 }
 
+.light-mode {
+	background-color: white;
+	color:black;
+}
+
+/* main */
+
+main{
+	width: 95%;
+	margin: auto;
+	height: 80%;
+	/* box-shadow: 0px 0px 5px powderblue; */
+	display: flex;
+	overflow: hidden;
+}
+
+.box1{
+	width: 50%;
+	height: 100%;
+	/* border: 1px solid red; */
+	background-image: url('../assets/lsvg_2 (1).svg');
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position: 50%;
+	order: 1;
+	position: relative;
+	right: 50%;
+	top: 100%;
+	animation: img-animation-1 2s forwards, img-animation-2 2s forwards 2s;
+}
+
+.box2{
+	width: 50%;
+	height: 100%;
+	/* border: 1px solid violet; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box2 h1{
+	font-family: "Bahnschrift Condensed";
+	font-size: 9vw;
+	font-weight: 500;
+	position: relative;
+	right: 110%;
+	animation: h1-animation 1.5s forwards ease-in-out 3.6s;
+}
+
+/* area - lists */
+
 .area{
-    /*background: #4e54c8;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  */
-    top:0;
-    width: 100%;
-    height:100vh;
-    
-   
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
 }
 
-.circles{
-    position: absolute;
-    top: 0;
-    margin-top:0px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.area ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8); */
+	z-index: -1;
 }
 
-.circles li{
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    animation: animate 25s linear infinite;
-    bottom: -150px;
-    
+.area ul li{
+	list-style: none;
+	width: 20px;
+	height: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 2px;
+	position: absolute;
+	bottom: -25%;
+	animation: animate 25s linear infinite;
 }
+
 
 .circles li:nth-child(1){
     left: 25%;
@@ -250,12 +247,43 @@ input:checked + .slider:before {
     height: 150px;
     animation-delay: 0s;
     animation-duration: 11s;
+} 
+
+/* media queries - responsive design */
+
+@media (max-width: 641px){
+	main{
+		flex-direction: column;
+		height: auto;
+	}
+	.box1,.box2{
+		width: 100%;
+	}
+	.box2{
+		height: 300px;
+	}
+	.box2 h1{
+		font-size: 18vw;
+		text-align: center;
+		animation-delay: 0s;
+	}
+	.box1{
+		height: 500px;
+		left: 100%;
+		animation: img-animation-3 1.5s forwards;
+	}
 }
 
+@media (max-width: 450px){
+	.box1{
+		background-size: 120%;
+		background-position: 94%;
+	}
+}
 
+/* keyframes */
 
 @keyframes animate {
-
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
@@ -265,7 +293,31 @@ input:checked + .slider:before {
     100%{
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
-        border-radius: 50%;
+		border-radius: 50%;
+		bottom: 100%;
     }
+}
 
+@keyframes h1-animation{
+	100%{
+		right: 0;
+	}
+}
+
+@keyframes img-animation-1{
+	100%{
+		top: 0;
+	}
+}
+
+@keyframes img-animation-2{
+	100%{
+		right: 0;
+	}
+}
+
+@keyframes img-animation-3{
+	100%{
+		left: 0;
+	}
 }

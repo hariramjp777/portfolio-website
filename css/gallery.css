@@ -1,16 +1,201 @@
-img {
-    margin: 0 auto;
-    padding: 2%;
-    width: 100%;
-    /* [1.1] Set it as per your need */
+/* css resets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+	background: #1E242A;
+}
+
+.grid-container{
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    border-radius: 9px;
+}
+
+.grid-container .img-container{
     overflow: hidden;
-    /* [1.2] Hide the overflowing of child elements */
-    transition: transform .5s ease;
+    border-radius: inherit;
+}
+
+.grid-container .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+    border-radius: inherit;
+    user-select: none;
+}
+
+.grid-container .img-container img:hover{
+    transform: scale(1.1);
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s;
+}
+
+.modal img{
+    width: 50%;
+    height: 75%;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 12px;
+    transform: scale(0.5);
+    user-select: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+@media (max-width: 936px){
+    .modal img{
+        width: 91%;
+    }
+}
+
+.modal.show{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal.show img{
+    transform: scale(1);
+}
+
+/* area - lists */
+
+.area{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.area ul{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8); */
+	z-index: -1;
+}
+
+.area ul li{
+	list-style: none;
+	width: 20px;
+	height: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 2px;
+	position: absolute;
+	bottom: -25%;
+	animation: animate 25s linear infinite;
 }
 
 
-/* [3] Finally, transforming the image when container gets hovered */
+.circles li:nth-child(1){
+    left: 25%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 0s;
+}
 
-img:hover {
-    transform: scale(1.1);
+
+.circles li:nth-child(2){
+    left: 10%;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    animation-delay: 0s;
+    animation-duration: 11s;
+} 
+
+/* keyframes */
+
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+		border-radius: 50%;
+		bottom: 100%;
+    }
 }
